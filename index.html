@@ -437,6 +437,67 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label class="modal-label" for="user-name">Имя </label>
+            <div class="input-wrap">
+              <input type="text" name="user-name" id="user-name" class="modal-input" required />
+              <svg class="input-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-modal-name"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-tel">Телефон</label>
+            <div class="input-wrap">
+              <input type="tel" name="user-tel" id="user-tel" class="modal-input" required />
+              <svg class="input-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-modal-tel"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-email"> Почта</label>
+            <div class="input-wrap">
+              <input type="email" name="user-email" id="user-email" class="modal-input" required />
+              <svg class="input-icon" width="15" height="12">
+                <use href="./images/icons.svg#icon-modal-email"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label class="modal-label" for="user-comment">Комментарий</label>
+            <textarea
+              name="user-comment"
+              class="modal-comment"
+              placeholder="Введите текст"
+              id="user-comment"
+            ></textarea>
+          </div>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="agreement"
+              id="agreement"
+              class="input-check visually-hidden"
+            />
+            <label for="agreement" class="check-text">
+              <span class="check-border-wrap">
+                <svg class="check-border" width="16" height="15">
+                  <use href="./images/icons.svg#icon-tick-border"></use>
+                </svg>
+              </span>
+              <span class="check-icon-wrap">
+                <svg class="check-icon" width="11" height="8">
+                  <use href="./images/icons.svg#icon-modal-tick"></use>
+                </svg>
+              </span>
+              Соглашаюсь с рассылкой и принимаю&nbsp;<a href="">Условия договора</a>
+            </label>
+          </div>
+          <button type="submit" class="order-button modal-button">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
