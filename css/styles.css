@@ -607,6 +607,12 @@ img {
   padding-left: 16px;
   padding-right: 16px;
   margin-right: 12px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-input:focus {
+  border-color: var(--accent-color);
 }
 
 .footer-button {
@@ -831,8 +837,6 @@ img {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 10px;
-  margin-top: 4px;
 
   padding-left: 42px;
 
@@ -841,13 +845,14 @@ img {
 
 .input-wrap {
   position: relative;
+  margin-bottom: 10px;
 }
 
 .input-icon {
   position: absolute;
-  left: 21px;
+  left: 15px;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(0, -50%);
 
   fill: var(--primary-text-color);
 
@@ -868,6 +873,9 @@ img {
   font-size: 12px;
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
+
+  display: block;
+  margin-bottom: 4px;
 }
 
 .modal-button {
@@ -890,7 +898,6 @@ img {
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-top: 4px;
   resize: none;
 
   padding: 12px 16px;
@@ -920,6 +927,10 @@ img {
   color: var(--accent-color);
 }
 
+.check-text > a:hover {
+  text-decoration: none;
+}
+
 .check-text span {
   display: flex;
   align-items: center;
@@ -929,6 +940,11 @@ img {
 
 .check-border {
   fill: var(--primary-text-color);
+}
+
+/* Не працює focus */
+.check-text:focus + .check-border {
+  fill: var(--accent-color);
 }
 
 .check-icon-wrap {
